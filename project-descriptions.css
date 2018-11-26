@@ -55,6 +55,7 @@ ul {
 .navigation-bar li a:hover {
     color: #ffbb00;;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #logo { 
@@ -87,12 +88,13 @@ ul {
 
 .paragraph { 
 	color: black; 
-    font-size: 115%;
+    font-size: 130%;
     font-family: karla;
     line-height: 150%;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    position: relative;
+    text-align: left;
+    margin-left: 225px;
+    margin-right: 175px;
     z-index: -1;
 }
 

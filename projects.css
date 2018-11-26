@@ -12,6 +12,20 @@ body {
     z-index: -1;
     background: white;
     padding: 30px 0px;
+    animation: colorchange 7s;
+    -webkit-animation: colorchange 7s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange { 
+    0% {background: rgba(131,96,195,0.5);}
+    100% {background: rgba(46,191,145,0.5);}
+}
+
+@-webkit-keyframes colorchange { 
+    0% {background: rgba(131,96,195,0.5);}
+    100% {background: rgba(46,191,145,0.5);}
 }
 
 center { 
@@ -54,6 +68,7 @@ ul {
 .navigation-bar li a:hover {
     color: #ffbb00;;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #logo { 
@@ -74,8 +89,8 @@ ul {
 /* text */
 
 .heading { 
-	color: #2ebf91;
-    font-size: 225%; 
+	color: white;
+    font-size: 300%; 
     font-family: montserrat;
     display: block;
     text-align: center;
@@ -86,7 +101,7 @@ ul {
 
 .paragraph1 { 
     color: black;
-    font-size: 135%; 
+    font-size: 168%; 
     font-family: karla;
     margin: 0 auto;
     display: block;
