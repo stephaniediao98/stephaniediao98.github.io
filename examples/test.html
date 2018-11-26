@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+#gradient { 
+    background-color: #8360c3; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #8360c3 , #2ebf91); /* Standard syntax (must be last) */
+}
+
+.header { 
+	/*background-color: white;*/
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation-bar {
+    /*background-color: white; */
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navigation-bar a {
+    float: center;
+    color: white;
+    font-family: karla;
+    text-align: center;
+    padding: 24px 24px;
+    text-decoration: none;
+}
+
+.navigation-bar a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.title {
+	color: white;
+    font-size: 300%;
+    font-family: poppins;
+    font-weight: ultra-bold;
+}
+
+.heading { 
+	color: #2ebf91;
+    font-size: 150%; 
+    font-family: poppins;
+    margin: 0px;
+}
+
+.paragraph { 
+	color: black; 
+    font-size: 100%;
+    font-family: karla;
+    margin: 0px;
+    line-height: 150%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    background-color: white;
+    font-family: karla;
+    border: 2px solid #2ebf91;
+    border-radius: 0px;
+    color: #8360c3;
+    padding: 5px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+	background-color: #e7e7e7;
+}
+
+.typewriter { 
+    font-family: karla;
+    font-size: 175%;
+    text-align: center;
+    color: white;
+}
+
+</style>
+</head>
+<body id="gradient"> 
+
+
+
+<!-- header -->
+<div class="header">
+<img src="http://i67.tinypic.com/minbwk.png" border="0" alt="my logo!" height="125" width ="145">
+<br>
+<h class="title">stephanie diao</h>
+</div>
+
+
+
+<!-- navigation bar -->
+<div class="navigation-bar">
+<a href="#">about me</a>
+<a href="#">projects</a>
+<a href="#">activities</a>
+<a href="#">contact</a>
+</div>
+<br><br>
+
+
+<!-- photo of me -->
+<img src="http://i66.tinypic.com/2f0dund.jpg" border="0" alt="photo of me!" width="337.5" height="450">
+  
+  
+  
+<!-- about me -->
+<br><br><br><br><br>
+<div2>
+<h1 class="heading">about me</h1>
+<br>
+<h1 class="typewriter">I am...
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "a student.", "studying computer science & statistics & design.", "interested in human computer interaction.", "interested in user-centered design.", "working on making this website better!", "enjoy reading.", "an animal lover.", "probably browsing Quora right now.", "obsessed with sushi."]'></span>
+</h1>
+<p class="paragraph">I'm currently a sophomore studying Computer Science and Statistics and pursuing the Segal Design Certificate at Northwestern University.</p>  
+</div2>
+<br><hr><br>
+
+
+
+<!-- projects -->
+<div3>
+<h3 class="heading">projects</h3>
+<p2 class="paragraph">
+<br>
+
+CS Course Projects: 
+<li class="paragraph">Created a chatbot using regular expressions and the Wikipedia API (Python)</li>
+<li class="paragraph">Built a sudoku puzzle solver using depth-first search and breadth-first search methods (Python)</li>
+<li class="paragraph">Implemented a Naïve-Bayes Sentiment Analysis System and trained neural networks (Python)</li>
+<br>
+
+MinneMUDAC Data Science Challenge:  
+<li class="paragraph">Worked with a team of 4 to build a regression tree to predict 2018 voter turnout rates in Minnesota</li>
+<li class="paragraph">Used R, Python, and the FRED API to extract FRED data</li>
+<li class="paragraph">Used the YouTube API to count views on Minnesota election related videos to gauge voter enthusiasm</li>
+<br>
+
+NeoStrap: 
+<li class="paragraph">Led a team of 4 to design and prototype a phone strap accessory that helps women store and carry their phones when they do not have pockets</li>
+<li class="paragraph">Conducted market research and user testing to gauge user specifications and requirements</li>
+<li class="paragraph">Wrote a technical report detailing design concept and rationale</li>
+<li class="paragraph">Created virtual design prototypes for various iterations of the NeoStrap and for packaging</li>
+<li class="paragraph">Designed a marketing presentation that was presented to my team’s client</li>
+<li class="paragraph">Manufactured mockups to determine optimal width, thickness, elasticity, and placement of the NeoStrap</li>
+<li class="paragraph">Oversaw RAM and GANTT scheduling charts</li>
+<li class="paragraph">Acted as product manager, head of user-centered design, and head of marketing and communications</li>
+<button class="button">technical report</button>
+<button class="button">marketing presentation</button>
+<br>
+
+LOC-IT:
+<li class="paragraph">Led a team of 3 to improve the design of the wheelchair locking system on Chicago public buses</li>
+<li class="paragraph">Conducted user observations and user/performance testing, wrote a technical report, designed a poster presentation, helped to manufacture the prototype, oversaw RAM and GANTT charts</li>
+<li class="paragraph">Acted as technical lead, and head of communications</li>
+<button class="button">technical report</button>
+<button class="button">poster</button>
+</p2></div3>
+<br><hr><br>
+
+
+
+<!-- activities -->
+<div4>
+<h4 class="heading">activities</h4>
+<p3 class="paragraph">
+<br>
+Girls Who Code: 
+<li class="paragraph">Mentored high school students monthly and taught them how to write programs in Python</li>
+<br>
+She Is Code: 
+<li class="paragraph">Led a marketing/public speaking workshop at a hackathon for young students</li>
+<br>
+Institute for Electrical and Electronics Engineers: 
+<li class="paragraph">Working with a team of 6 to design a website to help students buy and sell textbooks</li>
+<li class="paragraph">Using HTML, CSS, and JavaScript</li>
+</p3>
+</div4>
+<br><hr><br>
+
+
+
+
+<!-- contact -->
+<div6>
+<h6 class="heading">contact</h6>
+<p5 class="paragraph">
+<br>
+Email: stephaniediao98@gmail.com<br>
+Secondary Email: sdiao@u.northwestern.edu<br>
+Phone: 224-595-6805<br>
+Address: 2420 Campus Drive, Evanston, IL 60201<br>
+</p5>
+</div6>
+<br><hr><br>
+
+
+
+
+<script>
+var txtRotate = function(el, toRotate, period) { 
+	this.el = el;
+	this.toRotate = toRotate;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = ''; 
+    this.tick();
+	this.isDeleting = false;
+};
+
+txtRotate.prototype.tick = function() { 
+	var i = this.loopNum % this.toRotate.length; 
+    var fullTxt = this.toRotate[i];
+    
+    if (this.isDeleting) { 
+    	this.txt = fullTxt.substring(0, this.txt.length - 1); 
+    }
+    else { 
+    	this.txt = fullTxt.substring(0, this.txt.length + 1); 
+    }
+    
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '<span>';
+    
+    var that = this; 
+    var delta = 300 - Math.random() * 100; 
+    
+    if (this.isDeleting) { 
+    	delta /= 2; 
+    }
+    
+    if (!this.isDeleting && this.txt === fullTxt) { 
+    	delta = this.period; 
+        this.isDeleting = true; 
+    } 
+    else if (this.isDeleting && this.txt === '') { 
+    	this.isDeleting = false;
+        this.loopNum++; 
+        delta = 500; 
+    }  
+        
+    setTimeout(function() { 
+    	that.tick();
+    	}, delta);    
+    };
+    
+    window.onload = function() { 
+    	var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) { 
+        	var toRotate = elements[i].getAttribute('data-rotate'); 
+            var period = elements[i].getAttribute('data-period'); 
+        	if (toRotate) { 
+            	new txtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    
+    var css = document.createElement('style');
+    css.type = 'text/css';
+    css.innerHTML = '.text-rotate >. wrap {border-right: 0.08em solid #666}'
+    document.body.appendChild(css);  
+    };  
+</script>
+
+
+
+</body>
+</html>
