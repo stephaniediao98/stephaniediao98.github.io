@@ -103,19 +103,6 @@ body ul {
     z-index: -4;
 }
 
-.box {
-    border: 20px double white;
-    background-color:rgba(131,96,195,0.8);
-    height: 540px;
-    width: 1175px;
-    position: relative;
-    text-align: left;
-    margin-left: 120px;
-    margin-right: 100px;
-    margin-top: 0px;
-    z-index: -5;
-}
-
 /* typewriter */
 
 .typewriter { 
