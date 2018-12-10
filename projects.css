@@ -68,7 +68,6 @@ ul {
 .navigation-bar li a:hover {
     color: #ffbb00;;
     cursor: pointer;
-    text-decoration: underline;
 }
 
 #logo { 
