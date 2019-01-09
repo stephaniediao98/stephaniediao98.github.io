@@ -80,7 +80,7 @@ body ul {
 /* text */
 
 .heading { 
-	color: #5594a8;
+	color: #8360c3;
     font-size: 300%; 
     font-family: montserrat;
     display: block;
@@ -119,7 +119,7 @@ body ul {
 
 .typewriter { 
     font-family: raleway;
-    color: #2ebf91;
+    color: black;
     padding: 1 em 2em; 
     font-size: 38px;
     margin: 0 auto;

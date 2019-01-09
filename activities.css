@@ -80,7 +80,7 @@ body ul {
 /* text */
 
 .heading { 
-	color: #5594a8;
+	color: #8360c3;
     font-size: 300%; 
     font-family: montserrat;
     display: block;
@@ -91,7 +91,7 @@ body ul {
 }
 
 .paragraph { 
-	color: white; 
+	color: black; 
     font-size: 150%;
     font-family: karla;
     line-height: 150%;
