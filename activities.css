@@ -90,6 +90,17 @@ body ul {
     z-index: -2;
 }
 
+.section-heading {
+    color: black; 
+    font-size: 175%;
+    font-family: karla;
+    line-height: 150%;
+    position: relative;
+    text-align: center;
+    z-index: -4;
+    text-decoration: underline;
+}
+
 .paragraph { 
 	color: black; 
     font-size: 150%;
@@ -102,18 +113,17 @@ body ul {
     z-index: -4;
 }
 
-/* typewriter */
-
-.typewriter { 
-    font-family: raleway;
-    color: #2ebf91;
-    padding: 1 em 2em; 
-    font-size: 40px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
+.classes-container {
     position: relative;
-    z-index: -3;
+    z-index: -4;
+}
+
+#classes {
+    color: black; 
+    font-size: 125%;
+    font-family: karla;
+    line-height: 150%;  
+    text-align: center;
 }
 
 /* moving squares */
