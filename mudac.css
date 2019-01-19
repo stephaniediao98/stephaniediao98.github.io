@@ -85,15 +85,44 @@ ul {
     z-index: 0;
 }
 
+.section-heading { 
+    color: black;
+    font-size: 180%; 
+    font-family: karla;
+    font-weight:300;
+    display: block;
+    position: relative;
+    margin-left: 180px;
+    text-align: left;
+    padding: 20px;
+    z-index: 0;
+    text-decoration: underline; 
+}
+
 .paragraph { 
     color: black;
     font-size: 168%; 
     font-family: karla;
-    margin-right: 700px;
+    margin-left: 200px;
+    margin-right: 200px;
     display: block;
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: -1;
+}
+
+ol {
+    color: black;
+    font-size: 168%; 
+    font-family: karla;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: block;
+    text-align: left;
+    position: relative;
+    z-index: -1;
+    list-style-type: circle;
+    padding-left: 25px;
 }
 
 /* buttons */
