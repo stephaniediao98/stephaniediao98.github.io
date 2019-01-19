@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
 body { 
     margin-left: 0;
@@ -73,8 +73,9 @@ body ul {
     width: 55px;
     height: 65px;
     overflow: hidden;
-    padding: 20px 30px;
+    padding: 10px 30px;
     cursor: pointer;
+    float: left;
 }
 
 /* text */
