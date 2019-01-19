@@ -144,9 +144,9 @@ body {
 
 .project-tiles li h1{
     bottom: 110%;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: normal;
-    font-size: 200%;
+    font-size: 250%;
     padding-top: 100%;
     padding-bottom: 100%;
 }
@@ -163,10 +163,9 @@ body {
 }
 
 .project-tiles li p {
-	/* padding-top: 100%; */
 	top: 100%;
     padding-bottom: 50%;
-    font-size: 125%;
+    font-size: 140%;
 }
 
 /* hexagon hover */
@@ -184,9 +183,8 @@ body {
 /* hexagon links */
 
 .project-tiles a {  
-    margin-top: -32px;
+    margin-top: -25px;
     margin-left: -60px;
-    margin-right: 50px;
     margin-bottom: 180px;
 }
 
