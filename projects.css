@@ -7,47 +7,20 @@
     padding: 0;
 }
 
-body { 
-    margin-left: 0;
-    z-index: -1;
-    background: white;
-    padding: 30px 0px;
-    /* animation: colorchange 7s;
-    -webkit-animation: colorchange 7s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; */
-}
-
-/* @keyframes colorchange { 
-    0% {background: rgba(131,96,195,0.5);}
-    100% {background: rgba(46,191,145,0.5);}
-}
-
-@-webkit-keyframes colorchange { 
-    0% {background: rgba(131,96,195,0.5);}
-    100% {background: rgba(46,191,145,0.5);}
-} */
-
-center { 
-    overflow: visible;
-}
-
 /* navigation bar */
-
-ul { 
-    background-color: white;
-    list-style-type: none;
-    margin: 0;
-    top: 0;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-    height: 90px;
-}
 
 .navigation-bar {
     display: block;
     overflow: hidden;
+}
+
+.nav-bar-list { 
+    background-color: white;
+    list-style-type: none;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 90px;
 }
 
 .navigation-bar li { 
@@ -87,7 +60,14 @@ ul {
 
 /* text */
 
-.heading { 
+body { 
+    margin-left: 0;
+    z-index: -1;
+    background: white;
+    padding: 30px 0px;
+}
+
+.page-title { 
 	color:#8360c3;
     font-size: 300%; 
     font-family: montserrat;
@@ -98,7 +78,7 @@ ul {
     z-index: -1;
 }
 
-.paragraph1 { 
+.body-text { 
     color: black;
     font-size: 168%; 
     font-family: karla;
@@ -109,99 +89,69 @@ ul {
     z-index: -1;
 }
 
-/* hexagon tiles */
+/* project tiles */
 
-.categories {
-  overflow: hidden;
-  width: 80%;
-  display: block;
-  margin-top: -450px;
-  z-index: -1;
+.project-tiles {
+    overflow: hidden;
+    display: inline-block;
+    margin-top: -450px;
+    margin-left: 82px;
+    z-index: -1;
 }
 
-.categories li{
-  position: relative;
-  list-style-type: none;
-  width: 27.85714285714286%; /* = (100-2.5) / 3.5 */
-  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
-  float: left;
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transform: rotate(-60deg) skewY(30deg) !important;
-  -moz-transform: rotate(-60deg) skewY(30deg) !important;
-  transform: rotate(-60deg) skewY(30deg) translateZ(0) scale(1.0, 1.0) translate3d(0,0,0) !important;
+.project-tiles li{
+    position: relative;
+    list-style-type: none;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    float: left;
+    visibility: hidden;
 }
 
-.categories li:nth-child(3n+2) {
-  margin: 0 1%;
+.project-tiles li * {
+    position: absolute;
+    visibility: visible;
 }
 
-.categories li:nth-child(6n+4) {
-  margin-left: 0 1%;
-} 
-
-.categories li:nth-child(6n+4), 
-.categories li:nth-child(6n+5), 
-.categories li:nth-child(6n+6) {
-  margin-top: -6.8285714285%;
-  margin-bottom: -6.7285714285%;
-  -webkit-transform: translateX(52%) rotate(-60deg) skewY(30deg) !important;
-  -moz-transform: translateX(52%) rotate(-60deg) skewY(30deg) !important;
-  transform: translateX(52%) rotate(-60deg) skewY(30deg) translateZ(0) scale(1.0, 1.0) translate3d(0,0,0) !important;
-}
-
-.categories li:nth-child(6n+4):last-child, 
-.categories li:nth-child(6n+5):last-child, 
-.categories li:nth-child(6n+6):last-child {
-  margin-bottom: 0%;
-}
-
-.categories li * {
-  position: absolute;
-  visibility: visible;
-}
-
-.categories li > div {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-  -webkit-transform: skewY(-30deg) rotate(60deg) !important;
-  -moz-transform: skewY(-30deg) rotate(60deg) !important;
-  transform: skewY(-30deg) rotate(60deg) translateZ(0) scale(1.0, 1.0) translate3d(0,0,0) !important;
+.project-tiles li > div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
 /* text on hexagons */
-.categories li img {
-  left: -100%; 
-  right: -100%;
-  width: auto; 
-  height: 100%;
-  margin: 0 auto;   
+.project-tiles li img {
+    width: 300px; 
+    height: 300px;
+    left: -100%;  
+    right: -100%; 
+    margin: 0 auto;   
 }
 
-.categories div h1, 
-.categories div p{
-  width: 90%;
-  padding: 0 5%;
-  background-color: rgba(131, 96, 195, 0.85); 
-  font-family: raleway;
-  -webkit-transition: top 0.4s ease-out, bottom 0.4s ease-out, 0.4s padding 0.4s ease-out;
-  -moz-transition: top 0.4s ease-out, bottom 0.4s ease-out, 0.4s padding 0.4s ease-out;
-  transition: top 0.4s ease-out, bottom 0.4s ease-out, 0.4s padding 0.4s ease-out;
+.project-tiles div h1, 
+.project-tiles div p{
+    width: 100%;
+    padding: 0 5%;
+    background-color: gray; /* #8360c3; rgba(131, 96, 195, 0.85); */
+    font-family: karla;
+    -webkit-transition: top 0.4s ease-out, bottom 0.4s ease-out;
+    -moz-transition: top 0.4s ease-out, bottom 0.4s ease-out;
+    transition: top 0.4s ease-out, bottom 0.4s ease-out;
 }
 
-.categories li h1{
-  bottom: 110%;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 175%;
-  padding-top: 100%;
-  padding-bottom: 100%;
+.project-tiles li h1{
+    bottom: 110%;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 175%;
+    padding-top: 100%;
+    padding-bottom: 100%;
 }
 
-.categories li h1:after{
+.project-tiles li h1:after{
   content: '';
   display: block;
   position: absolute;
@@ -212,7 +162,7 @@ ul {
   border-bottom: 2px solid white;
 }
 
-.categories li p {
+.project-tiles li p {
 	padding-top: 50%;
 	top: 110%;
     padding-bottom: 50%;
@@ -221,64 +171,40 @@ ul {
 
 /* hexagon hover */
 
-.categories li div:hover h1 {
-  bottom:50%;
-  padding-bottom:10%;
+.project-tiles li div:hover h1 {
+  bottom: 50%;
+  padding-bottom: 25%;
 }
 
-.categories li div:hover p {
+.project-tiles li div:hover p {
   top: 50%;
   padding-top: 10%;
 }
 
 /* hexagon links */
 
-.categories a {  
+.project-tiles a {  
     margin-top: -32px;
     margin-left: -60px;
     margin-right: 50px;
     margin-bottom: 180px;
 }
 
-.categories a:link {
+.project-tiles a:link {
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
-.categories a:visited {
+.project-tiles a:visited {
     color: white;
     background-color: transparent;
 }
 
-.categories a:hover {
+.project-tiles a:hover {
     color: #2ebf91;
     background-color: transparent;
     text-decoration: none;
 }
 
-/* buttons */
-
-button {
-    background-color: white;
-    font-family: karla;
-    border: 2px solid #6483b1;
-    border-radius: 0px;
-    color: #8360c3;
-    padding: 5px 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 110%;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #6483b1;
-    color: white;
-    border: 2px solid #8360c3;
-}
 
