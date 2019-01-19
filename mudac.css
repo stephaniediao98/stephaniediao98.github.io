@@ -2,31 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-* { 
+* {
+    /* makes the format look the same on all webpages */
     margin: 0;
     padding: 0;
-}
-
-center { 
-    overflow: visible;
 }
 
 /* navigation bar */
 
-ul { 
+.navigation-bar {
+    display: block;
+    overflow: hidden;
+}
+
+.nav-bar-list { 
     background-color: white;
     list-style-type: none;
-    margin: 0;
     top: 0;
-    padding: 0;
     position: fixed;
     width: 100%;
     height: 90px;
-}
-
-.navigation-bar- {
-    display: block;
-    overflow: hidden;
 }
 
 .navigation-bar li { 
@@ -108,7 +103,7 @@ body {
     margin-right: 200px;
 }
 
-ol {
+.project-description-list {
     font-size: 168%; 
     list-style-type: circle;
     margin-left: 200px;
