@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="project-description.css" type="text/css">
+    <title>Project Description: CS 295 Course Project</title>
+</head>
+
+<!-- navigation bar -->
+<nav>        
+    <div class="navigation-bar">
+        <ul class="nav-bar-list">
+            <li id="logo"><a href="index.html"><img style="float: left; position: absolute; top: 0; margin: 0; width: 55px;
+                height: 65px; overflow: hidden; padding: 10px 30px;" src="http://i64.tinypic.com/jb5w7p.png"/></a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="activities.html">activities</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="aboutme.html">about me</a></li>
+        </ul>
+    </div>
+</nav>
+
+<br><br><br>
+
+<body>
+
+<!-- project description -->
+
+<div>
+    <h class="project-name">CS 295: Fundamentals of Computer Progamming 1.5</h>
+    <br><br>
+    <div class="project-description">
+        <h class="project-section-heading">Projects (look for descriptions on each project below):</h>
+            <ul class="project-description-list"> 
+                    <li>Chatbot</li>
+                    <li>Sudoku Puzzle Solver</li>
+                    <li>Neural Networks</li>
+                    <li>Naive-Bayes Sentiment Analysis Classifier</li>
+            </ul>
+        <br><br>
+        <h class="project-section-heading">Language:</h>
+            <p class="project-description-text">Python</p>
+        <br><br>
+        <h class="project-section-heading">Chatbot</h>
+            <p class="project-description-text">Built a Wikipedia chatbot that took in Wikipedia queries and generated a response based on information from Wikipedia</p>
+            <ul class="project-description-list">
+                <li>Wrote a matching program that took in a sequence of text from the user and matched it to a form of a question 
+                    <ol class="indented-text"> 
+                        <li>Example: "When was Grace Hopper born?" would match to "When was ___ born?"</li>
+                    </ol>
+                </li>
+                <li>Used the Wikipedia API to extract information from Wikipedia Pages</li>
+                <li>Used regular expressions to scan through Wikipedia Pages and find the answer to the input question
+                    <ol class="indented-text">
+                        <li>Example: if the question was "When was Grace Hopper born?", the regular expression used to find the birth date would be: "r'(?:Born\D*)(?P<birth>\d{4}-\d{2}-\d{2})'"</li>
+                    </ol>
+                </li>
+                <li>Questions implemented: 
+                    <ol class="indented-text">
+                        <li>When was __ born?, When was ___(name of company) founded?</li>
+                        <li>When was ___(name of state) added to the US?</li>
+                        <li>When did ___ die?</li>
+                        <li>What is the polar radius of ___(name of planet)?</li>
+                    </ol>   
+                </li>
+            </ul>
+        <br><br>
+    </div>
+</div>

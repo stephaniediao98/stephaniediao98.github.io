@@ -100,10 +100,10 @@ body {
 }
 
 .project-tiles li{
-    position: relative;
-    list-style-type: none;
     width: 300px;
     height: 300px;
+    list-style-type: none;
+    position: relative;
     padding: 5px;
     float: left;
     visibility: hidden;
@@ -117,8 +117,8 @@ body {
 .project-tiles li > div {
     width: 300px;
     height: 300px;
-    text-align: center;
     color: white;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -133,51 +133,49 @@ body {
 
 .project-tiles div h1, 
 .project-tiles div p{
-    width: 100%;
-    /* padding: 0 5%; */
     background-color:  rgba(131, 96, 195, 0.85); 
     font-family: karla;
+    width: 100%;
     -webkit-transition: top 0.4s ease-out, bottom 0.4s ease-out;
     -moz-transition: top 0.4s ease-out, bottom 0.4s ease-out;
     transition: top 0.4s ease-out, bottom 0.4s ease-out;
 }
 
 .project-tiles li h1{
-    bottom: 110%;
-    /* font-style: italic; */
     font-weight: normal;
     font-size: 250%;
+    bottom: 110%;
     padding-top: 100%;
     padding-bottom: 100%;
 }
 
 .project-tiles li h1:after{
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -1px; 
-  left: 40%;
-  width: 20%;
-  text-align: center;
-  border-bottom: 2px solid white;
+    content: '';
+    text-align: center;
+    border-bottom: 2px solid white;
+    display: block;
+    position: absolute;
+    bottom: -1px; 
+    left: 40%;
+    width: 20%;
 }
 
 .project-tiles li p {
-	top: 100%;
-    padding-bottom: 50%;
     font-size: 140%;
+    top: 100%;
+    padding-bottom: 50%;
 }
 
 /* hexagon hover */
 
 .project-tiles li div:hover h1 {
-  bottom: 50%;
-  padding-bottom: 25%;
+    bottom: 50%;
+    padding-bottom: 25%;
 }
 
 .project-tiles li div:hover p {
-  top: 50%;
-  padding-top: 10%;
+    top: 50%;
+    padding-top: 10%;
 }
 
 /* hexagon links */
@@ -190,8 +188,8 @@ body {
 
 .project-tiles a:link {
     color: white;
-    background-color: transparent;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .project-tiles a:visited {
@@ -201,7 +199,6 @@ body {
 
 .project-tiles a:hover {
     color: black; 
-     /* #2ebf91; */
     background-color: transparent;
     text-decoration: none;
 }
