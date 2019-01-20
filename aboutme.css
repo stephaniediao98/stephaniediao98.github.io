@@ -80,10 +80,10 @@ body ul {
 
 /* text */
 
-.heading { 
+.page-title { 
 	color: #8360c3;
     font-size: 300%; 
-    font-family: montserrat;
+    font-family: raleway;
     display: block;
     position: relative;
     text-align: center;
@@ -119,7 +119,7 @@ body ul {
 /* typewriter */
 
 .typewriter { 
-    font-family: raleway;
+    font-family: karla;
     color: black;
     padding: 1 em 2em; 
     font-size: 38px;

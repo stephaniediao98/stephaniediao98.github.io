@@ -79,10 +79,10 @@ body ul {
 
 /* text */
 
-.heading { 
+.page-title { 
 	color: #8360c3;
     font-size: 300%; 
-    font-family: montserrat;
+    font-family: raleway;
     display: block;
     position: relative;
     text-align: center;
@@ -107,7 +107,7 @@ body ul {
     font-family: karla;
     line-height: 150%;
     position: relative;
-    text-align: left;
+    text-align: center;
     margin-left: 225px;
     margin-right: 175px;
     z-index: -4;
