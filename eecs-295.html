@@ -32,15 +32,15 @@
     <div class="project-description">
         <h class="project-section-heading">Projects (look for descriptions on each project below):</h>
             <ul class="project-description-list"> 
-                    <li>Chatbot</li>
-                    <li>Sudoku Puzzle Solver</li>
-                    <li>Neural Networks</li>
-                    <li>Naive-Bayes Sentiment Analysis Classifier</li>
+                    <li>Wikipedia Chatbot</li>
+                    <li>Naive-Bayes Sentiment Analysis Classifier & Neural Networks</li>
+                    <li>Movie Chatbot</li>
             </ul>
         <br><br>
         <h class="project-section-heading">Language:</h>
             <p class="project-description-text">Python</p>
         <br><br>
+        <!-- chatbot -->
         <h class="project-section-heading">Chatbot</h>
             <p class="project-description-text">Built a Wikipedia chatbot that took in Wikipedia queries and generated a response based on information from Wikipedia</p>
             <ul class="project-description-list">
@@ -63,6 +63,27 @@
                         <li>What is the polar radius of ___(name of planet)?</li>
                     </ol>   
                 </li>
+            </ul>
+        <br><br>
+        <!-- naive bayes classifier -->
+        <h class="project-section-heading">Naive Bayes Sentiment Analysis Classifier</h>
+            <p class="project-description-text">Built a classifier that classified movie reivews as either positive or negative & trained it</p>
+            <ul class="project-description-list">
+                <li>Trained the system using movie reviews from the "rateitall" database</li>
+                    <ol class="indented-text">
+                        <li>Each movie review file in the database was titled with either a "pos" prefix to indicate that it was a positive movie review or a "neg" prefix to indicate that it was a negative movie review</li>
+                        <li>Used two dictionaries, one for positive movie reviews and one for negative movie reviews, with the keys being the words that were inlcuded in the reviews and the values being the frequencies of the words appearing in the reviews.</li>
+                        <li>To calculate the frequencies of individual words appearing in either a positive or negative review, I parsed the text of each review and updated the frequency associated with that word in the appropriate dictionary</li>
+                    </ol>
+                <li>Wrote a classify method that took in a string of text as input, classified it, and then returned its classification, positive or negative</li>
+                    <ol class="indented-text">
+                        <li>Calculated the conditional probabilities of each word in the review given that the document was of either the positive class or negative class</li>
+                        <li>Calculated the sum of the logs of all these conditional probabilities (this helps deal with underflow)</li>
+                        <li>Multiplied the product by the prior probability of any review being of either the positive class or the negative class</li>
+                        <li>Followed these steps twice for each review- once with the conditional probability of being positive and once with the conditional probability being positive</li>
+                        <li>If the positive conditional probability was larger than the negative conditional probability, then the review was classified as positive. Otherwise, it was classified as negative.</li>
+                    </ol>
+                <li>To deal with the possibility of a word appearing in the training data for only one class but not the other, I used add-one smoothing by adding 1 to the numerator of each probability</li>
             </ul>
         <br><br>
     </div>
